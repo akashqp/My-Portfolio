@@ -1,0 +1,256 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Hello, I'm Akash 👋</h2>
+                        <p>Final year B.Tech student at Manipal University | Jaipur, majoring in Computer Science and Engineering with specialization in Artificial Intelligence and Machine Learning.</p>
+                        <p>I have a passion for backend development, Python programming, and scripting with Shell/Bash. Over the years, I’ve honed my skills by working on various projects ranging from web development using Flask/Django to leveraging machine learning techniques for solving real-world problems. With experience in Docker, I ensure my applications are portable and scalable.</p>
+                        <p>Currently, I am exploring opportunities to apply my knowledge in cutting-edge technologies, and I'm excited about solving complex challenges in software engineering and AI. I am also trying my hand at FastAPI a relatively new framework because it's ideal when we work with ideal for building APIs and microservices.</p>
+                        <ul class="social-media">
+                            <!-- <li><a href="https://twitter.com/akashqp" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
+                            <li><a href="https://github.com/akashqp" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/akashqp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/aksingh.2003/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="hero-image"></div>
+                        <img src="{{ url_for('static', filename='hero-image.png') }}" alt="Akash Kumar Singh">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="about">
+            <div class="container">
+                <h2>Curious about me? Here you have it:</h2>
+                <p>I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
+                <p>I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestis, Tailwindcss, Supabase and much more.</p>
+                <p>I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.</p>
+                <p>When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.</p>
+                <p>Finally, some quick bits about me.</p>
+                <ul>
+                    <li>B.E. in Computer Engineering</li>
+                    <li>Full time freelancer</li>
+                    <li>Avid learner</li>
+                    <li>Aspiring indie hacker</li>
+                </ul>
+                <p>One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉</p>
+            </div>
+        </section> -->
+
+        <section class="skills">
+            <div class="container-skills">
+                <h2>Technical Skills</h2>
+                <div class="skills-list">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <p>Advanced skills in Python, Java, C, and C#.</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                        <p>Proficient in Django and Flask for backend development. Familiar with .NET.</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                        <p>Proficiency in machine learning algorithms and frameworks such as Scikit-learn, PyTorch, and Tensorflow.</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Database Management</h3>
+                        <p>Experience with MySQL, SQL Server, and PostgreSQL.</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-line"></i> Data Analysis</h3>
+                        <p>Strong analytical skills with experience in data visualization and predictive analytics.</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-docker"></i> Docker</h3>
+                        <p>Ability to build, deploy, and manage applications using Docker images and containers. Skilled in Docker Hub and Docker Compose.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <div class="container-experience">
+                <h2>Here is a quick summary of my most recent experiences:</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <img src="{{ url_for('static', filename='Tata.png') }}" alt="Tata Technologies">
+                            <p>Software Developer Intern</p>
+                            <p>Tata Technologies</p>
+                            <p>May 2024 - July 2024</p>
+                        </div>
+                        <div class="experience-content">
+                            <ul>
+                                <li>Developed AI features for the Manufacturing Execution System (MES) in the steel pipe making industry using .NET for backend development.</li>
+                                <li>Designed and implemented a chatbot using NLP and Gemini for intent classification, enhancing user interactions.</li>
+                                <li>Utilized Flask (Python) for machine learning model development and SQL Server for database management.</li>
+                                <li>Analyzed sample datasets from pipe manufacturing, focusing on ladle composition and pipe rejection rates, and created data visualizations for decision-making.</li>
+                                <li>Developed machine learning models for predictive analytics to identify and address reasons for pipe rejection.</li>
+                                <li>Gained detailed knowledge of MES industry processes.</li>
+                                <li>Work Sample: <a href="https://github.com/your-github-link" target="_blank">Link to Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <img src="https://banao.tech/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBanaoLogo.303c8651.png&w=256&q=75" alt="Banao Tech">
+                            <p>Python Django Development Intern (Developer)</p>
+                            <p>Banao Tech</p>
+                            <p>Jun 2023 - Mar 2024</p>
+                        </div>
+                        <div class="experience-content">
+                            <ul>
+                                <li>Contributed to the backend development of the ‘Watchout’ Android app during the internship at Across the Globe (Banao Tech).</li>
+                                <li>Designed a project management dashboard using Django and integrated ClickUp for Product Managers.</li>
+                                <li>Hands-on experience in Django development, API integration, and project management.</li>
+                                <li>Active engagement in bug-solving and troubleshooting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <img src="https://media.licdn.com/dms/image/v2/C4D0BAQF97Cbv5ALLzA/company-logo_200_200/company-logo_200_200/0/1648277837820/suvidha_foundation_logo?e=1734566400&v=beta&t=VPKWQR5eLOfju71v7OXuI_m-iEB0igOacIryeHWYLwc" alt="Suvidha Foundation">
+                            <p>Machine Learning Intern</p>
+                            <p>Suvidha Foundation</p>
+                            <p>Jan 2023 - Feb 2023</p>
+                        </div>
+                        <div class="experience-content">
+                            <ul>
+                                <li>Implemented the algorithm and model architecture in the research paper ‘Neural Machine Translation by Jointly Learning to Align and Translate.’</li>
+                                <li>Utilized PyTorch to develop and train a neural machine translation model with attention mechanism.</li>
+                                <li>Documented the process and presented findings to the team.</li>
+                                <li>Test Loss per Sentence: 46.421, Test PPL per Sentence: 144721150610455461888.000, Test Loss per Token: 2.504, Test PPL per Token: 12.226.</li>
+                                <li>Work Sample: <a href="https://github.com/your-github-link" target="_blank">Link to Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container-work">
+                <h2>Some of the noteworthy projects I have built:</h2>
+                <div class="work-grid">
+                    <div class="work-card">
+                        <img src="{{ url_for('static', filename='fiskil.png') }}" alt="Fiskil">
+                        <h3>Fiskil</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                        <ul class="work-tags">
+                            <li>React</li>
+                            <li>Next.js</li>
+                            <li>Typescript</li>
+                            <li>Nest.js</li>
+                            <li>PostgreSQL</li>
+                            <li>Tailwindcss</li>
+                            <li>Figma</li>
+                            <li>Cypress</li>
+                            <li>Storybook</li>
+                            <li>Git</li>
+                        </ul>
+                        <a href="#" class="view-project">View Project</a>
+                    </div>
+                    <div class="work-card">
+                        <img src="{{ url_for('static', filename='fiskil.png') }}" alt="Fiskil">
+                        <h3>Fiskil</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                        <ul class="work-tags">
+                            <li>React</li>
+                            <li>Next.js</li>
+                            <li>Typescript</li>
+                            <li>Nest.js</li>
+                            <li>PostgreSQL</li>
+                            <li>Tailwindcss</li>
+                            <li>Figma</li>
+                            <li>Cypress</li>
+                            <li>Storybook</li>
+                            <li>Git</li>
+                        </ul>
+                        <a href="#" class="view-project">View Project</a>
+                    </div>
+                    <div class="work-card">
+                        <img src="{{ url_for('static', filename='fiskil.png') }}" alt="Fiskil">
+                        <h3>Fiskil</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                        <ul class="work-tags">
+                            <li>React</li>
+                            <li>Next.js</li>
+                            <li>Typescript</li>
+                            <li>Nest.js</li>
+                            <li>PostgreSQL</li>
+                            <li>Tailwindcss</li>
+                            <li>Figma</li>
+                            <li>Cypress</li>
+                            <li>Storybook</li>
+                            <li>Git</li>
+                        </ul>
+                        <a href="#" class="view-project">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="testimonials">
+            <div class="container">
+                <h2>Nice things people have said about me:</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-user">
+                            <i class="fas fa-user-circle"></i>
+                            <p>John Doe</p>
+                            <p>Founder - xyz.com</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-user">
+                            <i class="fas fa-user-circle"></i>
+                            <p>John Doe</p>
+                            <p>Founder - abc.com</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-user">
+                            <i class="fas fa-user-circle"></i>
+                            <p>John Doe</p>
+                            <p>Freelancer</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="call-to-action">
+            <div class="container">
+                <p>What's next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.</p>
+                <div class="call-to-action-links">
+                    <a href="mailto:akashqp@gmail.com" class="cta-link" target="_blank"><i class="fas fa-envelope"></i> akashqp@gmail.com</a>
+                    <a href="tel:+91 7366919407" class="cta-link"><i class="fas fa-phone-alt"></i> +91 7366919407</a>
+                </div>
+                <p>You may also find me on these platforms!</p>
+                <ul class="social-media">
+                    <!-- <li><a href="https://twitter.com/akashqp" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
+                    <li><a href="https://github.com/akashqp" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/akashqp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/aksingh.2003/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

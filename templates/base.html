@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>
+            Akash Kumar Singh
+        </h1>
+        <nav>
+         <a href="#">
+          About
+         </a>
+         <a href="#">
+          Work
+         </a>
+         <a href="#">
+          Experience
+         </a>
+         <a href="#">
+          Contact
+         </a>
+         <a class="btn" href="#">
+          Download CV
+         </a>
+        </nav>
+       </header>
+    </div>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Designed and coded by Akash</p>
+        </div>
+    </footer>
+</body>
+
+</html>
