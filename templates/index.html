@@ -3,7 +3,7 @@
 {% block content %}
 
     <main>
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
@@ -43,7 +43,7 @@
             </div>
         </section> -->
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <div class="container-skills">
                 <h2>Technical Skills</h2>
                 <div class="skills-list">
@@ -75,10 +75,28 @@
             </div>
         </section>
 
-        <section class="experience">
+        <section id="experience" class="experience">
             <div class="container-experience">
                 <h2>Here is a quick summary of my most recent experiences:</h2>
                 <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <img src="https://media.licdn.com/dms/image/v2/D560BAQGhXzqC0B80lA/company-logo_200_200/company-logo_200_200/0/1709062125841?e=1735776000&v=beta&t=16Ml3Si6EBwZbrXEyAzoe6GJNUbAiODjWFnPIleED70" alt="Constituents AI">
+                            <p>Backend Developer Intern</p>
+                            <p>Constituents AI</p>
+                            <p>Sep 2024 - Present</p>
+                        </div>
+                        <div class="experience-content">
+                            <ul>
+                                <li>Contributed to the development of the ZPlan product, focused on processing user-submitted datasets and generating insights based on user queries.</li>
+                                <li>Utilized Flask to build and manage the backend infrastructure for the product.</li>
+                                <li>Worked on mapping dataset columns, leveraging expertise in graph data structures for effective analysis and insights generation.</li>
+                                <li>Participated in the design and development of the high-level architecture for the ZPlan product.</li>
+                                <li>Collaborated in the creation and design of the product's database.</li>
+                                <li>Product link: <a href="https://zplan.ai/" target="_blank">https://zplan.ai/</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="experience-card">
                         <div class="experience-header">
                             <img src="{{ url_for('static', filename='Tata.png') }}" alt="Tata Technologies">
@@ -135,67 +153,35 @@
             </div>
         </section>
 
-        <section class="work">
+        <section id="projects" class="work">
             <div class="container-work">
                 <h2>Some of the noteworthy projects I have built:</h2>
                 <div class="work-grid">
                     <div class="work-card">
-                        <img src="{{ url_for('static', filename='fiskil.png') }}" alt="Fiskil">
-                        <h3>Fiskil</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                        <img src="{{ url_for('static', filename='ScrapeX.png') }}" alt="ScrapeX">
+                        <h3>ScrapeX</h3>
+                        <p>Enhanced users' information retrieval experience by scraping articles based on a keyword or topic. Utilized the BERTSUM model for extractive summarization, delivering efficient and user-friendly access to valuable insights.</p>
                         <ul class="work-tags">
-                            <li>React</li>
-                            <li>Next.js</li>
-                            <li>Typescript</li>
-                            <li>Nest.js</li>
-                            <li>PostgreSQL</li>
-                            <li>Tailwindcss</li>
-                            <li>Figma</li>
-                            <li>Cypress</li>
-                            <li>Storybook</li>
-                            <li>Git</li>
+                            <li>Python</li>
+                            <li>BERTSUM</li>
+                            <li>Data Analysis</li>
                         </ul>
                         <a href="#" class="view-project">View Project</a>
                     </div>
                     <div class="work-card">
-                        <img src="{{ url_for('static', filename='fiskil.png') }}" alt="Fiskil">
-                        <h3>Fiskil</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                        <img src="{{ url_for('static', filename='StyleTransfer.png') }}" alt="Image Style Transfer">
+                        <h3>Image Style Transfer with Watermarking</h3>
+                        <p>Developed the integration of Image Style Transfer with advanced Watermarking to ensure robust content protection and optimized visual appeal.</p>
                         <ul class="work-tags">
-                            <li>React</li>
-                            <li>Next.js</li>
-                            <li>Typescript</li>
-                            <li>Nest.js</li>
-                            <li>PostgreSQL</li>
-                            <li>Tailwindcss</li>
-                            <li>Figma</li>
-                            <li>Cypress</li>
-                            <li>Storybook</li>
-                            <li>Git</li>
+                            <li>Python</li>
+                            <li>Image Processing</li>
+                            <li>Neural Networks</li>
                         </ul>
-                        <a href="#" class="view-project">View Project</a>
-                    </div>
-                    <div class="work-card">
-                        <img src="{{ url_for('static', filename='fiskil.png') }}" alt="Fiskil">
-                        <h3>Fiskil</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-                        <ul class="work-tags">
-                            <li>React</li>
-                            <li>Next.js</li>
-                            <li>Typescript</li>
-                            <li>Nest.js</li>
-                            <li>PostgreSQL</li>
-                            <li>Tailwindcss</li>
-                            <li>Figma</li>
-                            <li>Cypress</li>
-                            <li>Storybook</li>
-                            <li>Git</li>
-                        </ul>
-                        <a href="#" class="view-project">View Project</a>
+                        <a href="https://colab.research.google.com/drive/1oJbkG2CZd44UZzOfi1RAL32-4i9nYudq?usp=sharing" class="view-project" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>  
 
         <!-- <section class="testimonials">
             <div class="container">
@@ -235,20 +221,25 @@
             </div>
         </section> -->
 
-        <section class="call-to-action">
+        <section id="contact" class="call-to-action">
             <div class="container">
                 <p>What's next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.</p>
                 <div class="call-to-action-links">
                     <a href="mailto:akashqp@gmail.com" class="cta-link" target="_blank"><i class="fas fa-envelope"></i> akashqp@gmail.com</a>
                     <a href="tel:+91 7366919407" class="cta-link"><i class="fas fa-phone-alt"></i> +91 7366919407</a>
                 </div>
-                <p>You may also find me on these platforms!</p>
+            </div>
+        </section>
+        <section class="social-links">
+            <div class="container">
+                <h3>Connect with me</h3>
+                <div style="height: 20px;"></div>
                 <ul class="social-media">
-                    <!-- <li><a href="https://twitter.com/akashqp" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
                     <li><a href="https://github.com/akashqp" target="_blank"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/akashqp/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                     <li><a href="https://www.instagram.com/aksingh.2003/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 </ul>
+                <div style="height: 20px;"></div>
             </div>
         </section>
     </main>

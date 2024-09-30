@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 60px; /* Adjust this value to match your header height */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -134,6 +138,44 @@ p {
 
 .social-media i {
     font-size: 24px;
+}
+
+.social-links {
+    padding: 0;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.social-links h2 {
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+.social-links .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links .social-media li {
+    list-style: none;
+}
+
+.social-links .social-media a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #2c2c2c;
+    border-radius: 50%;
+    color: #f1f1f1;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links .social-media a:hover {
+    background-color: #3a3a3a;
 }
 
 .about {
